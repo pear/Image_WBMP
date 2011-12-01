@@ -11,7 +11,7 @@
   <active>yes</active>
  </lead>
  <date>2011-12-01</date>
- <time>22:31:14</time>
+ <time>22:38:03</time>
  <version>
   <release>0.2.0</release>
   <api>0.1.0</api>
@@ -30,7 +30,8 @@ Package 2
    <file baseinstalldir="/Image/WBMP" md5sum="1230800dc34adcbf4fffc2c4e64e6a56" name="docs/WBMP_sample.php" role="doc" />
    <file baseinstalldir="/Image/WBMP" md5sum="e6100831e683a7b8102fb1f3b2e70f13" name="docs/WBMP_sample.wbmp" role="doc" />
    <file baseinstalldir="/Image/WBMP" md5sum="6729a1143554329012c4e8f84f698e13" name="docs/xbriteb.flf" role="doc" />
-   <file baseinstalldir="/" md5sum="f68637e4f3ee327816be8cdbdab07ccc" name="Image/WBMP.php" role="php" />
+   <file baseinstalldir="/" md5sum="22eabf7c05b54455eb1f4d468e7a49b9" name="Image/WBMP.php" role="php" />
+   <file baseinstalldir="/" md5sum="54e90e25d18591ba1b78d157911356ae" name="Image/WBMP/Exception.php" role="php" />
   </dir>
  </contents>
  <dependencies>
