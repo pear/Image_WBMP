@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE package SYSTEM "http://pear.php.net/dtd/package-1.0">
+<package version="1.0" packagerversion="1.4.6">
+ <name>Image_WBMP</name>
+ <summary>Manipulate WBMP images</summary>
+ <description>Package for manipulate WBMP (Wireless BMP format) images
+ </description>
+ <maintainers>
+  <maintainer>
+   <user>bolk</user>
+   <name>Evgeny Stepanischev</name>
+   <email>bolk@lixil.ru</email>
+   <role>lead</role>
+  </maintainer>
+  </maintainers>
+ <release>
+  <version>0.1.0</version>
+  <date>2006-02-10</date>
+  <license>PHP License</license>
+  <state>alpha</state>
+  <notes>This is the first release.
+  </notes>
+  <deps>
+   <dep type="php" rel="ge" version="4.0.4"/>
+   <dep type="pkg" rel="ge" version="0.2">Image_XBM</dep>
+   <dep type="pkg" rel="ge" version="0.8" optional="yes">Text_Figlet</dep>
+  </deps>
+  <filelist>
+   <file role="data" baseinstalldir="/Image/WBMP" name="docs/WBMP_sample.wbmp"/>
+   <file role="data" baseinstalldir="/Image/WBMP" name="docs/xbriteb.flf"/>
+   <file role="doc" baseinstalldir="/Image/WBMP" name="docs/WBMP_sample.php"/>
+   <file role="php" baseinstalldir="/Image" name="WBMP.php"/>
+  </filelist>
+ </release>
+</package>
