@@ -2,7 +2,7 @@
 
 /* vim: set expandtab tabstop=4 softtabstop=4 shiftwidth=4: */
 // +----------------------------------------------------------------------+
-// | PHP version 4                                                        |
+// | PHP version 5                                                        |
 // +----------------------------------------------------------------------+
 // | Copyright (c) 1997-2002 The PHP Group                                |
 // +----------------------------------------------------------------------+
@@ -22,19 +22,15 @@
 
 
 require_once 'Image/XBM.php';
+require_once 'Image/XBMP/Exception.php';
 
 class Image_WBMP extends Image_XBM
 {
-    function Image_WBMP()
-    {
-        parent::Image_XBM();
-    }
-
     /**
      * Output image to browser or file
      *
      * @param string $filename (optional) filename for output
-     * @return bool PEAR_Error or true
+     * @return bool true
      * @access public
      */
     function output($filename = false)
@@ -65,7 +61,7 @@ class Image_WBMP extends Image_XBM
                 fwrite($fp, $s);
                 fclose($fp);
             } else {
-                return PEAR::raiseError('Cannot open file for writing.', 5);
+                throw new Image_WBMP_Exception('Cannot open file for writing.', 5);
             }
         }
         return true;
@@ -75,7 +71,7 @@ class Image_WBMP extends Image_XBM
      * Create a new image from XBM file or URL
      *
      * @param string $filename XBM file name or URL
-     * @return mixed PEAR_error or true for success
+     * @return mixed true for success
      * @access public
      */
     function createFromFile($filename)
@@ -84,13 +80,13 @@ class Image_WBMP extends Image_XBM
         @flock ($fp, LOCK_SH);
 
         if (!is_resource($fp)) {
-            return PEAR::raiseError('Cannot open file.', 4);
+            throw new Image_WBMP_Exception('Cannot open file.', 4);
         }
 
         // WBMP header
         $sign = fread($fp, 2);
         if ($sign <> "\0\0") {
-            return PEAR::raiseError('Invalid WBMP file type.', 5);
+            throw new Image_WBMP_Exception('Invalid WBMP file type.', 5);
         }
 
 		// width, height
@@ -111,4 +107,3 @@ class Image_WBMP extends Image_XBM
         fclose($fp);
     }
 }
-?>
