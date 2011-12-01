@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package packagerversion="1.4.6" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+<package packagerversion="1.9.4" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
  <name>Image_WBMP</name>
  <channel>pear.php.net</channel>
  <summary>Manipulate WBMP images</summary>
@@ -10,10 +10,10 @@
   <email>bolk@lixil.ru</email>
   <active>yes</active>
  </lead>
- <date>2006-02-10</date>
- <time>15:10:45</time>
+ <date>2011-12-01</date>
+ <time>22:31:14</time>
  <version>
-  <release>0.1.0</release>
+  <release>0.2.0</release>
   <api>0.1.0</api>
  </version>
  <stability>
@@ -21,13 +21,16 @@
   <api>alpha</api>
  </stability>
  <license uri="http://www.php.net/license">PHP License</license>
- <notes>This is the first release.</notes>
+ <notes>
+QA release
+Package 2
+ </notes>
  <contents>
-  <dir name="/">
+  <dir baseinstalldir="/" name="/">
    <file baseinstalldir="/Image/WBMP" md5sum="1230800dc34adcbf4fffc2c4e64e6a56" name="docs/WBMP_sample.php" role="doc" />
-   <file baseinstalldir="/Image/WBMP" md5sum="e6100831e683a7b8102fb1f3b2e70f13" name="docs/WBMP_sample.wbmp" role="data" />
-   <file baseinstalldir="/Image/WBMP" md5sum="6729a1143554329012c4e8f84f698e13" name="docs/xbriteb.flf" role="data" />
-   <file baseinstalldir="/Image" md5sum="f68637e4f3ee327816be8cdbdab07ccc" name="WBMP.php" role="php" />
+   <file baseinstalldir="/Image/WBMP" md5sum="e6100831e683a7b8102fb1f3b2e70f13" name="docs/WBMP_sample.wbmp" role="doc" />
+   <file baseinstalldir="/Image/WBMP" md5sum="6729a1143554329012c4e8f84f698e13" name="docs/xbriteb.flf" role="doc" />
+   <file baseinstalldir="/" md5sum="f68637e4f3ee327816be8cdbdab07ccc" name="Image/WBMP.php" role="php" />
   </dir>
  </contents>
  <dependencies>
@@ -53,4 +56,22 @@
   </optional>
  </dependencies>
  <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.2.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2011-12-01</date>
+   <license uri="http://www.php.net/license">PHP License</license>
+   <notes>
+QA release
+Package 2
+   </notes>
+  </release>
+ </changelog>
 </package>
