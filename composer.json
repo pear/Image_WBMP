@@ -8,7 +8,7 @@
     ],
     "autoload": {
         "psr-0": {
-            "Image_WBMP": "./"
+            "Image": "./"
         }
     },
     "description": "More info available on: http://pear.php.net/package/Image_WBMP",
@@ -23,9 +23,13 @@
     },
     "type": "library",
     "require": {
-        "pear/pear_exception": "*"
+        "pear/pear_exception": "*",
+        "pear/image_xbm": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "*"
+    },
+    "suggest": {
+        "pear/text_figlet": "Install optionally via your project's composer.json"
     }
 }
